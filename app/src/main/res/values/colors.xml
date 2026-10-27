@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tile">#25272B</color>
+    <color name="tile_focused">#373B42</color>
+    <color name="tile_pressed">#484E58</color>
+    <color name="text">#FFFFFF</color>
+    <color name="focus">#FFFFFF</color>
+    <color name="border">#54585F</color>
+</resources>

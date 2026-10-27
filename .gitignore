@@ -1,0 +1,17 @@
+# Local build and device workspace
+/work/
+/outputs/
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Keep signing material and local configuration private
+*.jks
+*.keystore
+*.pem
+*.key
+.env
+.env.*

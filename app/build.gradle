@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'nz.tony.tvlauncher'
+    compileSdk 34
+    buildToolsVersion '35.0.0'
+
+    defaultConfig {
+        applicationId 'nz.tony.tvlauncher'
+        minSdk 30
+        targetSdk 30
+        versionCode 2
+        versionName '0.2.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint {
+        abortOnError true
+        warningsAsErrors true
+        // Android 11 private evaluation build; this is not a Play Store submission.
+        disable 'ExpiredTargetSdkVersion', 'OldTargetApi', 'GradleDependency', 'AndroidGradlePluginVersion'
+    }
+}

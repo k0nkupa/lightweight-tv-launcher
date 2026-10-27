@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_vertical" android:orientation="horizontal" android:padding="48dp">
+    <LinearLayout style="@style/Card">
+        <ImageButton android:id="@+id/netflix" style="@style/Tile"
+            android:src="@drawable/netflix_mark" android:contentDescription="@string/netflix"
+            android:nextFocusLeft="@id/netflix" android:nextFocusRight="@id/youtube"
+            android:nextFocusUp="@id/netflix" android:nextFocusDown="@id/netflix" />
+        <TextView style="@style/CardLabel" android:text="@string/netflix" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card">
+        <ImageButton android:id="@+id/youtube" style="@style/Tile"
+            android:src="@drawable/youtube_mark" android:contentDescription="@string/youtube"
+            android:nextFocusLeft="@id/netflix" android:nextFocusRight="@id/plex"
+            android:nextFocusUp="@id/youtube" android:nextFocusDown="@id/youtube" />
+        <TextView style="@style/CardLabel" android:text="@string/youtube" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card">
+        <ImageButton android:id="@+id/plex" style="@style/Tile"
+            android:src="@drawable/plex_mark" android:contentDescription="@string/plex"
+            android:nextFocusLeft="@id/youtube" android:nextFocusRight="@id/hdmi"
+            android:nextFocusUp="@id/plex" android:nextFocusDown="@id/plex" />
+        <TextView style="@style/CardLabel" android:text="@string/plex" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card">
+        <ImageButton android:id="@+id/hdmi" style="@style/Tile"
+            android:src="@drawable/hdmi_mark" android:contentDescription="@string/hdmi"
+            android:nextFocusLeft="@id/plex" android:nextFocusRight="@id/settings"
+            android:nextFocusUp="@id/hdmi" android:nextFocusDown="@id/hdmi" />
+        <TextView style="@style/CardLabel" android:text="@string/hdmi" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card">
+        <ImageButton android:id="@+id/settings" style="@style/Tile"
+            android:src="@drawable/settings_mark" android:contentDescription="@string/settings"
+            android:nextFocusLeft="@id/hdmi" android:nextFocusRight="@id/settings"
+            android:nextFocusUp="@id/settings" android:nextFocusDown="@id/settings" />
+        <TextView style="@style/CardLabel" android:text="@string/settings" />
+    </LinearLayout>
+</LinearLayout>
